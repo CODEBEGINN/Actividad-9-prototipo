@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduStock Mobile</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #dfe6ee;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .phone {
+      width: 360px;
+      height: 740px;
+      background: #f9f5f4;
+      border-radius: 35px;
+      overflow: hidden;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+      position: relative;
+    }
+
+    .header {
+      background: #0c722e;
+      color: white;
+      padding: 25px 20px;
+    }
+
+    .header h1 {
+      font-size: 24px;
+      margin-bottom: 5px;
+    }
+
+    .header p {
+      font-size: 14px;
+      opacity: 0.9;
+    }
+
+    .search {
+      margin-top: 15px;
+    }
+
+    .search input {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 10px;
+    }
+
+    .content {
+      padding: 20px;
+      overflow-y: auto;
+      height: 540px;
+      overflow-x: auto;
+      width: 350px;
+    }
+
+    .section-title {
+      font-size: 18px;
+      margin-bottom: 15px;
+      color: #21a54f;
+    }
+    .card-link {
+      text-decoration: none;
+    }
+    .cards {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-bottom: 25px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      padding: 18px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .card h3 {
+      color: #0c722e;
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .resource-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .resource {
+      background: white;
+      border-radius: 12px;
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+    }
+
+    .resource-info h4 {
+      color: #0c722e;
+      margin-bottom: 5px;
+      font-size: 15px;
+    }
+
+    .resource-info span {
+      font-size: 13px;
+      color: #666;
+    }
+
+    .status {
+      background: #d4edda;
+      color: #155724;
+      padding: 5px 10px;
+      border-radius: 8px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+    .status-no {
+      background: #2c1413;
+      color: #9e2608;
+      padding: 5px 10px;
+      border-radius: 8px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    .bottom-nav {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background: white;
+      display: flex;
+      justify-content: space-around;
+      padding: 16px;
+      border-top: 1px solid #ddd;
+    }
+
+    .bottom-nav a {
+      text-decoration: none;
+      color: #0c722e;
+      font-size: 13px;
+      font-weight: bold;
+      text-align: center;
+    }
+</Style>
+
+</head>
+<body>
+
+<div class="phone">
+    <div class="header">
+        <h1>EduStock</h1>
+        <p>Gestión de Inventario Educativo</p>
+    </div>
+
+
+    <div class="content">
+
+    <h2 class="section-title">Resumen</h2>
+
+    <a href="total_recursos.html" class="card-link">
+    <div class="cards">
+        <div class="card">
+        <h3>Total Recursos</h3>
+        <p>6 recursos registrados</p>
+        </div>
+    
+    </a>
+    <a href="Prestamos_activos.html" class="card-link">
+    <div class="card">
+        <h3>Préstamos Activos</h3>
+        <p>3 préstamos en curso</p>
+        </div>
+    </a>
+    <a href="Disponibles.html" class="card-link">
+        <div class="card">
+        <h3>Disponibles</h3>
+        <p>5 recursos disponibles</p>    
+        </div>
+    
+    </div>
+    </a>
+
+    <h2 class="section-title">Inventario</h2>
+
+    
+    <div class="resource-list">
+
+        <div class="resource">
+        <div class="resource-info">
+            <h4>Computador HP</h4>
+            <span>Laboratorio 1</span>
+        </div>
+    
+        <div class="status-no">No disponible</div>
+        </div>
+    
+
+    
+        <div class="resource">
+        <div class="resource-info">
+            <h4>Video Beam Epson</h4>
+            <span>Aula 203</span>
+        </div>
+        <div class="status">Disponible</div>
+        </div>
+    
+
+
+        <div class="resource">
+        <div class="resource-info">
+            <h4>Libro Base de Datos</h4>
+            <span>Biblioteca</span>
+        </div>
+    
+        <div class="status">Disponible</div>
+        </div>
+    </div>
+
+<div class="bottom-nav">
+      <a href="total_recursos.html">Total recursos</a>
+      <a href="Prestamos_activos.html">Préstamos</a>
+      <a href="Disponibles.html">Disponibles</a>
+</div>
+
+</div>
+
+</body>
+</html>
+
